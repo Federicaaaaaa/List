@@ -13,10 +13,7 @@ namespace List
             List<Persona> Persone = new List<Persona>();
             for (int i = 0; i < 4; i++)
             {
-                Persona p = new Persona();
-                p.Nome = Console.ReadLine();
-                p.Eta = int.Parse(Console.ReadLine());
-                Persone.Add(p);
+                Persone.Add(Persona.Parse(Console.ReadLine()));
             }
             for (int i = 0; i < Persone.Count; i++)
             {
