@@ -15,10 +15,11 @@ namespace List
             {
                 Persone.Add(Persona.Parse(Console.ReadLine()));
             }
-            for (int i = 0; i < Persone.Count; i++)
+            //Utilizzare il foreach e  non il for
+            foreach(Persona p in Persone)
             {
-                if (Persone[i].Eta > 17)
-                    Console.WriteLine(Persone[i]);
+                if (p.Eta > 17)
+                    Console.WriteLine(p);
             }
             Console.ReadLine();
         }
